@@ -1,0 +1,100 @@
+@mixin txtstyle {
+  text-decoration: none;
+  font-size: 3.3rem;
+  font-weight: 300;
+  color: #393939;
+  padding-left: 0.5rem;
+}
+$btn-color: #5bacc3;
+$primary-background-color: #fff0ed;
+$secondary-background-color: #393939;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "open sans";
+}
+.header {
+  color: $secondary-background-color;
+  background-color: $primary-background-color;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @include txtstyle();
+  &__box {
+    display: flex;
+    margin-left: 1rem;
+  }
+  &__image {
+    min-width: 5rem;
+    max-width: 12rem;
+  }
+
+  &__text {
+    @include txtstyle();
+
+    &-an {
+      @include txtstyle();
+    }
+  }
+  &__navigation {
+    display: flex;
+    align-self: center;
+    list-style: none;
+  }
+  &__link {
+    margin-bottom: 0.8rem;
+    &-an {
+      color: $secondary-background-color;
+      text-decoration: none;
+      padding-right: 1.5rem;
+      font-size: 2.1rem;
+      font-weight: 400;
+    }
+    &-different {
+      color: $btn-color;
+    }
+  }
+}
+.icon {
+  @extend .header__image;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: $btn-color;
+  font-size: 2.1rem;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 2rem;
+  min-width: 10%;
+  margin-bottom: auto;
+  &--mod {
+    background-color: transparent;
+    border: 2px solid #393939;
+    position: absolute;
+    top: 42.5rem;
+    right: 63rem;
+    width: 18rem;
+    height: 7rem;
+    z-index: -0.9;
+  }
+  &--bawareness-ani {
+    background-color: transparent;
+    border: 2px solid #393939;
+    position: absolute;
+    top: 24.2rem;
+    right: 30.5rem;
+    width: 15.2rem;
+    height: 6.8rem;
+    z-index: -0.5;
+  }
+}

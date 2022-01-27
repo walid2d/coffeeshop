@@ -1,0 +1,251 @@
+$btn-color: #5bacc3;
+$primary-background-color: #fff0ed;
+$secondary-background-color: #393939;
+.herobox {
+  background-color: $primary-background-color;
+  display: flex;
+  &__container {
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__text {
+    font-size: 6rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 22%);
+    margin: 20rem 0rem 4rem 8rem;
+  }
+  &__description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #393939;
+    margin: 0rem 42rem 4rem 8rem;
+  }
+  &__image {
+    min-width: 25%;
+    margin: 2rem 8rem 4rem 0rem;
+  }
+  &__btn {
+    margin: 0rem 0rem 0rem 8rem;
+    margin-bottom: auto;
+    max-width: 20%;
+  }
+}
+
+/* <---products---> */
+.products {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__tittle {
+    font-size: 6rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 3rem 30rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  &__btn {
+    margin: 4rem auto;
+    min-width: 15%;
+    max-width: 15%;
+  }
+  &__btn--ani {
+    background-color: transparent;
+    border: 2px solid $secondary-background-color;
+    position: absolute;
+    top: 61.2rem;
+    right: 55.3rem;
+    width: 19.2rem;
+    height: 7rem;
+    z-index: -0.5;
+  }
+  &__cardbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .card {
+      min-width: 33rem;
+      max-width: 35rem;
+      min-height: 44rem;
+      max-height: 46rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 5px 9px 1px rgb(0, 0, 0, 0.25);
+      &__container {
+        background-color: $primary-background-color;
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 24.6%;
+        border-radius: 0rem 0rem 1rem 1rem;
+      }
+      &__image {
+        min-height: 70%;
+        max-height: 70%;
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 3rem 0rem 0rem 9rem;
+        &-mod {
+          padding-left: 10rem;
+        }
+      }
+    }
+  }
+}
+
+.card__box {
+  align-self: center;
+  &__heading {
+    font-size: 3.3rem;
+    font-weight: 300;
+    padding-left: 0rem;
+  }
+  &__quantity {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #909090;
+  }
+  &__price {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: $btn-color;
+    padding-left: 0rem;
+    align-self: center;
+  }
+  .card__text-modone {
+    padding-left: 9rem;
+  }
+  .card__price-modone {
+    padding-left: 12.5rem;
+  }
+}
+
+/* <---discountbox---> */
+.discountbox {
+  background-color: white;
+  padding: 9rem 8rem 13rem 8rem;
+  &__text {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: white;
+    background-color: $secondary-background-color;
+    padding: 3rem 0rem;
+    min-width: 85%;
+    &:hover {
+      transition: background-color 2s ease-in 0.5s;
+      background-color: $btn-color;
+    }
+    &-mod {
+      font-weight: 700;
+    }
+  }
+}
+
+/* <---footer---> */
+
+.footer {
+  background-color: $primary-background-color;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  &__title {
+    font-size: 3.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  &__address--info {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $secondary-background-color;
+  }
+  &__hours--info {
+    @extend .footer__address--info;
+  }
+  &__hours--infomod {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  &--icon1 {
+    min-width: 6rem;
+    max-width: 12rem;
+    height: 12rem;
+    opacity: 25%;
+    position: absolute;
+    top: 10rem;
+    right: -4rem;
+  }
+  &--icon2 {
+    position: absolute;
+    min-width: 6rem;
+    max-width: 12rem;
+    height: 12rem;
+    opacity: 25%;
+    top: 3rem;
+    right: 120rem;
+  }
+}
+
+.bawareness {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13rem;
+  padding-bottom: 4rem;
+  &__box {
+    align-self: center;
+    position: relative;
+  }
+  &__imgbox {
+    background-image: url(../Assets/coldbrewbackground.png);
+    background-position: center;
+    background-size: 57rem;
+    min-width: 40rem;
+    max-width: 50rem;
+    min-height: 40rem;
+    align-self: center;
+    position: relative;
+    &--style {
+      position: absolute;
+      background-color: transparent;
+      border: 5px solid $btn-color;
+      height: 40rem;
+      width: 40rem;
+      top: -1.5rem;
+      right: 1.5rem;
+      z-index: -0.5;
+    }
+  }
+  &__img {
+    min-height: 24rem;
+    max-height: 55rem;
+    margin: 6rem 12rem;
+    transform: rotate(0deg);
+    &:hover {
+      transform: rotate(360deg);
+      transition: all 2s ease;
+    }
+  }
+  &__iconbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  &__heading {
+    font-size: 6rem;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $secondary-background-color;
+    margin-bottom: 2rem;
+  }
+  &__icon {
+    max-width: 5rem;
+  }
+}

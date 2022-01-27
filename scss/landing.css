@@ -1,0 +1,244 @@
+.herobox {
+  background-color: #fff0ed;
+  display: flex;
+}
+.herobox__container {
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.herobox__text {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #383838;
+  margin: 20rem 0rem 4rem 8rem;
+}
+.herobox__description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #393939;
+  margin: 0rem 42rem 4rem 8rem;
+}
+.herobox__image {
+  min-width: 25%;
+  margin: 2rem 8rem 4rem 0rem;
+}
+.herobox__btn {
+  margin: 0rem 0rem 0rem 8rem;
+  margin-bottom: auto;
+  max-width: 20%;
+}
+
+/* <---products---> */
+.products {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.products__tittle {
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 3rem 30rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+.products__btn {
+  margin: 4rem auto;
+  min-width: 15%;
+  max-width: 15%;
+}
+.products__btn--ani {
+  background-color: transparent;
+  border: 2px solid #393939;
+  position: absolute;
+  top: 61.2rem;
+  right: 55.3rem;
+  width: 19.2rem;
+  height: 7rem;
+  z-index: -0.5;
+}
+.products__cardbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.products__cardbox .card {
+  min-width: 33rem;
+  max-width: 35rem;
+  min-height: 44rem;
+  max-height: 46rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.25);
+}
+.products__cardbox .card__container {
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 24.6%;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.products__cardbox .card__image {
+  min-height: 70%;
+  max-height: 70%;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 3rem 0rem 0rem 9rem;
+}
+.products__cardbox .card__image-mod {
+  padding-left: 10rem;
+}
+
+.card__box {
+  align-self: center;
+}
+.card__box__heading {
+  font-size: 3.3rem;
+  font-weight: 300;
+  padding-left: 0rem;
+}
+.card__box__quantity {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #909090;
+}
+.card__box__price {
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #5bacc3;
+  padding-left: 0rem;
+  align-self: center;
+}
+.card__box .card__text-modone {
+  padding-left: 9rem;
+}
+.card__box .card__price-modone {
+  padding-left: 12.5rem;
+}
+
+/* <---discountbox---> */
+.discountbox {
+  background-color: white;
+  padding: 9rem 8rem 13rem 8rem;
+}
+.discountbox__text {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: white;
+  background-color: #393939;
+  padding: 3rem 0rem;
+  min-width: 85%;
+}
+.discountbox__text:hover {
+  transition: background-color 2s ease-in 0.5s;
+  background-color: #5bacc3;
+}
+.discountbox__text-mod {
+  font-weight: 700;
+}
+
+/* <---footer---> */
+.footer {
+  background-color: #fff0ed;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+.footer__title {
+  font-size: 3.3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.footer__address--info, .footer__hours--info {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #393939;
+}
+.footer__hours--infomod {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.footer--icon1 {
+  min-width: 6rem;
+  max-width: 12rem;
+  height: 12rem;
+  opacity: 25%;
+  position: absolute;
+  top: 10rem;
+  right: -4rem;
+}
+.footer--icon2 {
+  position: absolute;
+  min-width: 6rem;
+  max-width: 12rem;
+  height: 12rem;
+  opacity: 25%;
+  top: 3rem;
+  right: 120rem;
+}
+
+.bawareness {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13rem;
+  padding-bottom: 4rem;
+}
+.bawareness__box {
+  align-self: center;
+  position: relative;
+}
+.bawareness__imgbox {
+  background-image: url(../Assets/coldbrewbackground.png);
+  background-position: center;
+  background-size: 57rem;
+  min-width: 40rem;
+  max-width: 50rem;
+  min-height: 40rem;
+  align-self: center;
+  position: relative;
+}
+.bawareness__imgbox--style {
+  position: absolute;
+  background-color: transparent;
+  border: 5px solid #5bacc3;
+  height: 40rem;
+  width: 40rem;
+  top: -1.5rem;
+  right: 1.5rem;
+  z-index: -0.5;
+}
+.bawareness__img {
+  min-height: 24rem;
+  max-height: 55rem;
+  margin: 6rem 12rem;
+  transform: rotate(0deg);
+}
+.bawareness__img:hover {
+  transform: rotate(360deg);
+  transition: all 2s ease;
+}
+.bawareness__iconbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.bawareness__heading {
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.bawareness__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #393939;
+  margin-bottom: 2rem;
+}
+.bawareness__icon {
+  max-width: 5rem;
+}/*# sourceMappingURL=landing.css.map */
