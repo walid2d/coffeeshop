@@ -1,2 +1,2 @@
-# coffeeshop-v2
-improved upon the v1 with some modest change. 
+# Coffeeshop
+One of my first coding project. I have learned html and css best practices through this. It is made using: HTML, SCSS, Flexbox and BEM.
